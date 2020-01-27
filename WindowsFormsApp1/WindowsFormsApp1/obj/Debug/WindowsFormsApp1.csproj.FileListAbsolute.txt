@@ -1,0 +1,56 @@
+C:\Users\Mantas\Desktop\New folder\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Mantas\Desktop\New folder\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Mantas\Desktop\New folder\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Mantas\Desktop\New folder\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\Mantas\Desktop\New folder\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\Mantas\Desktop\New folder\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Threading.Tasks.dll
+C:\Users\Mantas\Desktop\New folder\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Graph.dll
+C:\Users\Mantas\Desktop\New folder\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Graph.Core.dll
+C:\Users\Mantas\Desktop\New folder\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\Mantas\Desktop\New folder\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.pdb
+C:\Users\Mantas\Desktop\New folder\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\Mantas\Desktop\New folder\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\Mantas\Desktop\New folder\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Mantas\Desktop\New folder\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Buffers.dll
+C:\Users\Mantas\Desktop\New folder\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Mantas\Desktop\New folder\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Memory.dll
+C:\Users\Mantas\Desktop\New folder\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Mantas\Desktop\New folder\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Mantas\Desktop\New folder\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\unirest-net.dll
+C:\Users\Mantas\Desktop\New folder\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\Mantas\Desktop\New folder\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe.config
+C:\Users\Mantas\Desktop\New folder\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\Mantas\Desktop\New folder\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Mantas\Desktop\New folder\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.TrackerForm.resources
+C:\Users\Mantas\Desktop\New folder\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Mantas\Desktop\New folder\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+C:\Users\Mantas\Desktop\New folder\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Mantas\Desktop\New folder\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Mantas\Documents\Github\Time-tracker-app\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Mantas\Documents\Github\Time-tracker-app\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Mantas\Documents\Github\Time-tracker-app\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Mantas\Documents\Github\Time-tracker-app\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\Mantas\Documents\Github\Time-tracker-app\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\Mantas\Documents\Github\Time-tracker-app\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Threading.Tasks.dll
+C:\Users\Mantas\Documents\Github\Time-tracker-app\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Graph.dll
+C:\Users\Mantas\Documents\Github\Time-tracker-app\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Graph.Core.dll
+C:\Users\Mantas\Documents\Github\Time-tracker-app\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\Mantas\Documents\Github\Time-tracker-app\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.pdb
+C:\Users\Mantas\Documents\Github\Time-tracker-app\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\Mantas\Documents\Github\Time-tracker-app\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\Mantas\Documents\Github\Time-tracker-app\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Mantas\Documents\Github\Time-tracker-app\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Buffers.dll
+C:\Users\Mantas\Documents\Github\Time-tracker-app\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Mantas\Documents\Github\Time-tracker-app\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Memory.dll
+C:\Users\Mantas\Documents\Github\Time-tracker-app\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Mantas\Documents\Github\Time-tracker-app\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Mantas\Documents\Github\Time-tracker-app\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\unirest-net.dll
+C:\Users\Mantas\Documents\Github\Time-tracker-app\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\Mantas\Documents\Github\Time-tracker-app\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe.config
+C:\Users\Mantas\Documents\Github\Time-tracker-app\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\Mantas\Documents\Github\Time-tracker-app\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Mantas\Documents\Github\Time-tracker-app\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.TrackerForm.resources
+C:\Users\Mantas\Documents\Github\Time-tracker-app\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Mantas\Documents\Github\Time-tracker-app\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+C:\Users\Mantas\Documents\Github\Time-tracker-app\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Mantas\Documents\Github\Time-tracker-app\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
