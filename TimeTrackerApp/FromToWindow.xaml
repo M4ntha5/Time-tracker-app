@@ -1,0 +1,19 @@
+﻿<Window x:Class="TimmeTrackerApp.FromToWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TimmeTrackerApp"
+        mc:Ignorable="d"
+        Title="FromToWindow" Height="424" Width="288">
+    <Grid>
+        <ComboBox x:Name="FromToDropdown" HorizontalAlignment="Left" Height="26" Margin="52,69,0,0" VerticalAlignment="Top" Width="158" FontSize="16"/>
+        <Label Content="Select project" HorizontalAlignment="Left" Margin="52,33,0,0" VerticalAlignment="Top" Width="158" FontSize="16"/>
+        <Label Content="Enter time (h)" HorizontalAlignment="Left" Height="33" Margin="52,115,0,0" VerticalAlignment="Top" Width="158" FontSize="16" RenderTransformOrigin="0.347,0.324"/>
+        <TextBox x:Name="TimeTextBox" HorizontalAlignment="Left" Height="32" Margin="52,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" FontSize="16"/>
+        <Button x:Name="CommitOneButton" Content="Commit" HorizontalAlignment="Left" Height="51" Margin="52,310,0,0" VerticalAlignment="Top" Width="158" FontSize="16" Click="CommitOneButton_Click"/>
+        <Label Content="Description" HorizontalAlignment="Left" Height="31" Margin="52,210,0,0" VerticalAlignment="Top" Width="158" FontSize="16"/>
+        <TextBox x:Name="DescriptionTextBox" HorizontalAlignment="Left" Height="33" Margin="52,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" FontSize="16"/>
+
+    </Grid>
+</Window>
