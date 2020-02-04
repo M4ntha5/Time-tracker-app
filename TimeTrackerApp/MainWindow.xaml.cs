@@ -3,7 +3,6 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Interop;
 
 namespace TimeTrackerApp
 {
@@ -14,13 +13,14 @@ namespace TimeTrackerApp
     {
         //Set the API Endpoint to Graph 'me' endpoint
         string graphAPIEndpoint = "https://graph.microsoft.com/v1.0/me";
+        string endpoint = "http://api.codemash.io/auth/aad?projectId=b09eaa56-75eb-42f6-9d77-145ac6f6dedb";
 
         //Set the scope for API call to user.read
         string[] scopes = new string[] { "user.read" };
 
         public MainWindow()
         {
-            InitializeComponent();            
+            InitializeComponent();
         }
 
         private void Window_Closed(object sender, EventArgs e)
@@ -33,56 +33,57 @@ namespace TimeTrackerApp
         /// </summary>
         private async void CallGraphButton_Click(object sender, RoutedEventArgs e)
         {
-            AuthenticationResult authResult = null;
-            var app = App.PublicClientApp;
-            ResultText.Text = string.Empty;
-            TokenInfoText.Text = string.Empty;
+             AuthenticationResult authResult = null;
+             var app = App.PublicClientApp;
 
-            var accounts = await app.GetAccountsAsync();
-            var firstAccount = accounts.FirstOrDefault();
+             ResultText.Text = string.Empty;
+             TokenInfoText.Text = string.Empty;
 
-            try
-            {
-                authResult = await app.AcquireTokenSilent(scopes, firstAccount)
-                    .ExecuteAsync();
-            }
-            catch (MsalUiRequiredException ex)
-            {
-                // A MsalUiRequiredException happened on AcquireTokenSilent. 
-                // This indicates you need to call AcquireTokenInteractive to acquire a token
-                System.Diagnostics.Debug.WriteLine($"MsalUiRequiredException: {ex.Message}");
+             var accounts = await app.GetAccountsAsync();
+             var firstAccount = accounts.FirstOrDefault();
 
-                try
-                {
-                    authResult = await app.AcquireTokenInteractive(scopes)
-                        .WithAccount(accounts.FirstOrDefault())
-                        .WithParentActivityOrWindow(new WindowInteropHelper(this).Handle) // optional, used to center the browser on the window
-                        .WithPrompt(Prompt.SelectAccount)
-                        .ExecuteAsync();
-                }
-                catch (MsalException msalex)
-                {
-                    ResultText.Text = $"Error Acquiring Token:{System.Environment.NewLine}{msalex}";
-                }
-            }
-            catch (Exception ex)
-            {
-                ResultText.Text = $"Error Acquiring Token Silently:{System.Environment.NewLine}{ex}";
-                return;
-            }
+             try
+             {
+                 authResult = await app.AcquireTokenSilent(scopes, firstAccount)
+                     .ExecuteAsync();
+             }
+             catch (MsalUiRequiredException ex)
+             {
+                 // A MsalUiRequiredException happened on AcquireTokenSilent. 
+                 // This indicates you need to call AcquireTokenInteractive to acquire a token
+                 System.Diagnostics.Debug.WriteLine($"MsalUiRequiredException: {ex.Message}");
 
-            if (authResult != null)
-            {
-                UpdateResource("username", authResult.Account.Username);
-                TrackerWindow trackerWindow = new TrackerWindow();
-                trackerWindow.Owner = this;
-                this.Hide();
-                trackerWindow.ShowDialog();
+                 try
+                 {
+                     authResult = await app.AcquireTokenInteractive(scopes)
+                         .WithAccount(accounts.FirstOrDefault())                     
+                         .WithPrompt(Prompt.SelectAccount)
+                         .ExecuteAsync();
+                 }
+                 catch (MsalException msalex)
+                 {
+                     ResultText.Text = $"Error Acquiring Token:{System.Environment.NewLine}{msalex}";
+                 }
+             }
+             catch (Exception ex)
+             {
+                 ResultText.Text = $"Error Acquiring Token Silently:{System.Environment.NewLine}{ex}";
+                 return;
+             }
+
+             if (authResult != null)
+             {
+                 UpdateResource("username", authResult.Account.Username);
+                 LoggerWindow loggerWindow = new LoggerWindow();
+                 loggerWindow.Owner = this;
+                 this.Hide();
+                 loggerWindow.ShowDialog();
 
 
-                ResultText.Text = await GetHttpContentWithToken(graphAPIEndpoint, authResult.AccessToken);
-                DisplayBasicTokenInfo(authResult);
-            }
+                 ResultText.Text = await GetHttpContentWithToken(graphAPIEndpoint, authResult.AccessToken);
+                 DisplayBasicTokenInfo(authResult);
+             }
+             
         }
         private void UpdateResource(string name, string resource)
         {

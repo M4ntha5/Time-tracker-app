@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Mantas\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Mantas\\.nuget\\packages"
+    ]
+  }
+}

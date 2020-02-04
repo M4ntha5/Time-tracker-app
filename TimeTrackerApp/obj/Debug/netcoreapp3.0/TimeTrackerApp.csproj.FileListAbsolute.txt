@@ -1,0 +1,102 @@
+C:\Users\Mantas\Dropbox\New folder\desktop\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\TimeTrackerApp.exe
+C:\Users\Mantas\Dropbox\New folder\desktop\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\TimeTrackerApp.deps.json
+C:\Users\Mantas\Dropbox\New folder\desktop\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\TimeTrackerApp.runtimeconfig.json
+C:\Users\Mantas\Dropbox\New folder\desktop\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\TimeTrackerApp.runtimeconfig.dev.json
+C:\Users\Mantas\Dropbox\New folder\desktop\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\TimeTrackerApp.dll
+C:\Users\Mantas\Dropbox\New folder\desktop\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\TimeTrackerApp.pdb
+C:\Users\Mantas\Dropbox\New folder\desktop\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\Microsoft.Identity.Client.dll
+C:\Users\Mantas\Dropbox\New folder\desktop\TimeTrackerApp\TimeTrackerApp\obj\Debug\netcoreapp3.0\TimeTrackerApp.csprojAssemblyReference.cache
+C:\Users\Mantas\Dropbox\New folder\desktop\TimeTrackerApp\TimeTrackerApp\obj\Debug\netcoreapp3.0\LoggerWindow.g.cs
+C:\Users\Mantas\Dropbox\New folder\desktop\TimeTrackerApp\TimeTrackerApp\obj\Debug\netcoreapp3.0\MainWindow.g.cs
+C:\Users\Mantas\Dropbox\New folder\desktop\TimeTrackerApp\TimeTrackerApp\obj\Debug\netcoreapp3.0\App.g.cs
+C:\Users\Mantas\Dropbox\New folder\desktop\TimeTrackerApp\TimeTrackerApp\obj\Debug\netcoreapp3.0\TimeTrackerApp_MarkupCompile.cache
+C:\Users\Mantas\Dropbox\New folder\desktop\TimeTrackerApp\TimeTrackerApp\obj\Debug\netcoreapp3.0\TimeTrackerApp_MarkupCompile.lref
+C:\Users\Mantas\Dropbox\New folder\desktop\TimeTrackerApp\TimeTrackerApp\obj\Debug\netcoreapp3.0\LoggerWindow.baml
+C:\Users\Mantas\Dropbox\New folder\desktop\TimeTrackerApp\TimeTrackerApp\obj\Debug\netcoreapp3.0\MainWindow.baml
+C:\Users\Mantas\Dropbox\New folder\desktop\TimeTrackerApp\TimeTrackerApp\obj\Debug\netcoreapp3.0\TimeTrackerApp.g.resources
+C:\Users\Mantas\Dropbox\New folder\desktop\TimeTrackerApp\TimeTrackerApp\obj\Debug\netcoreapp3.0\TimeTrackerApp.AssemblyInfoInputs.cache
+C:\Users\Mantas\Dropbox\New folder\desktop\TimeTrackerApp\TimeTrackerApp\obj\Debug\netcoreapp3.0\TimeTrackerApp.AssemblyInfo.cs
+C:\Users\Mantas\Dropbox\New folder\desktop\TimeTrackerApp\TimeTrackerApp\obj\Debug\netcoreapp3.0\TimeTrackerApp.csproj.CopyComplete
+C:\Users\Mantas\Dropbox\New folder\desktop\TimeTrackerApp\TimeTrackerApp\obj\Debug\netcoreapp3.0\TimeTrackerApp.dll
+C:\Users\Mantas\Dropbox\New folder\desktop\TimeTrackerApp\TimeTrackerApp\obj\Debug\netcoreapp3.0\TimeTrackerApp.pdb
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\TimeTrackerApp.exe
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\TimeTrackerApp.deps.json
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\TimeTrackerApp.runtimeconfig.json
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\TimeTrackerApp.runtimeconfig.dev.json
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\TimeTrackerApp.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\TimeTrackerApp.pdb
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\CodeMash.Client.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\CodeMash.Code.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\CodeMash.Data.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\CodeMash.Files.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\CodeMash.Interfaces.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\CodeMash.Logs.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\CodeMash.Membership.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\CodeMash.Models.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\CodeMash.Notifications.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\CodeMash.Project.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\CodeMash.Repository.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\ServiceContracts.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\DnsClient.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Http.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Http.Extensions.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Mvc.Abstractions.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Routing.Abstractions.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.WebUtilities.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\Microsoft.Extensions.ObjectPool.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Options.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\Microsoft.Identity.Client.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\Microsoft.Net.Http.Headers.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\MongoDB.Bson.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\MongoDB.Driver.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\MongoDB.Driver.Core.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\MongoDB.Libmongocrypt.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\ServiceStack.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\ServiceStack.Client.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\ServiceStack.Common.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\ServiceStack.Interfaces.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\ServiceStack.Text.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\SharpCompress.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\System.ServiceModel.Primitives.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\System.ServiceModel.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netstandard2.0\System.Private.ServiceModel.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Private.ServiceModel.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\HrApp.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\bin\Debug\netcoreapp3.0\HrApp.pdb
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\obj\Debug\netcoreapp3.0\TimeTrackerApp.csprojAssemblyReference.cache
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\obj\Debug\netcoreapp3.0\FromToWindow.g.cs
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\obj\Debug\netcoreapp3.0\LoggerWindow.g.cs
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\obj\Debug\netcoreapp3.0\MainWindow.g.cs
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\obj\Debug\netcoreapp3.0\App.g.cs
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\obj\Debug\netcoreapp3.0\TimeTrackerApp_MarkupCompile.cache
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\obj\Debug\netcoreapp3.0\TimeTrackerApp_MarkupCompile.lref
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\obj\Debug\netcoreapp3.0\FromToWindow.baml
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\obj\Debug\netcoreapp3.0\LoggerWindow.baml
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\obj\Debug\netcoreapp3.0\MainWindow.baml
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\obj\Debug\netcoreapp3.0\TimeTrackerApp.g.resources
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\obj\Debug\netcoreapp3.0\TimeTrackerApp.AssemblyInfoInputs.cache
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\obj\Debug\netcoreapp3.0\TimeTrackerApp.AssemblyInfo.cs
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\obj\Debug\netcoreapp3.0\TimeTrackerApp.csproj.CopyComplete
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\obj\Debug\netcoreapp3.0\TimeTrackerApp.dll
+C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\obj\Debug\netcoreapp3.0\TimeTrackerApp.pdb

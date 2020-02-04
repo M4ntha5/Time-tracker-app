@@ -1,91 +1,106 @@
 ﻿using HrApp;
-using HrApp.Domain;
 using HrApp.Entities;
 using HrApp.Repositories;
 using HrApp.Services;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
-namespace TimmeTrackerApp
+
+namespace TimeTrackerApp
 {
     /// <summary>
     /// Interaction logic for FromToWindow.xaml
     /// </summary>
     public partial class FromToWindow : Window
     {
-        List<ProjectEntity> entitys;
-        EmployeeEntity employee;
+        List<ProjectEntity> AllProjects;
+        EmployeeEntity Employee;
 
         public FromToWindow()
         {
             InitializeComponent();
+            SetUp();
+        }
+        private async void SetUp()
+        {
+            //temporary only until working aad
+            Employee = await GetEmployee("5e20785d2bd93500011dbf6f");
+            AllProjects = await GetProjects();
 
-            GetUser();
-            var projects = GetAllProjects();
-
-            List<string> list = new List<string>();
-            foreach (var pro in projects)
+            List<string> namesList = new List<string>();
+            foreach (var pro in AllProjects)
             {
-                list.Add(pro.Name);
+                namesList.Add(pro.Name);
             }
 
-            FromToDropdown.ItemsSource = list;
+            FromToDropdown.ItemsSource = namesList;
             FromToDropdown.SelectedIndex = 0;
         }
-
-        private void GetUser()
-        {
-            string username = (string)System.Windows.Application.Current.Resources["username"];
-
-            employee = new EmployeeEntity() { FirstName = username, Id = "1" };
-        }
-
-        private List<ProjectEntity> GetAllProjects()
-        {
-            entitys = new List<ProjectEntity>();
-
-            var pro1 = new ProjectEntity { Name = "pro1" };
-            var pro2 = new ProjectEntity { Name = "pro2" };
-            var pro3 = new ProjectEntity { Name = "pro3" };
-            var pro4 = new ProjectEntity { Name = "pro4" };
-            entitys.Add(pro1); entitys.Add(pro2);
-            entitys.Add(pro3); entitys.Add(pro4);
-            return entitys;
-        }
-
-        private  void CommitOneButton_Click(object sender, RoutedEventArgs e)
+        private void CommitOneButton_Click(object sender, RoutedEventArgs e)
         {
             var timeWorked = TimeTextBox.Text;
-            int t = 0;
-            if (int.TryParse(timeWorked, out t))
-            {
-                var time = TimeSpan.FromHours(t);
 
-                TimeTrackerService repo = new TimeTrackerService();
-                var selectedProject = FromToDropdown.SelectedIndex;
-                string description = string.Empty;
+            if (double.TryParse(timeWorked, out double t) )
+            {           
+                if(t <= 0)
+                {
+                    DisplayError("Time must be greater than 0! (>0)");
+                    return;
+                }
+
+                var time = TimeSpan.FromHours(t);           
+                var projectId = FromToDropdown.SelectedIndex;
+                string description;
 
                 if (DescriptionTextBox.Text == "")
-                    description = "Worked on " + entitys[selectedProject].Name;
+                {
+                    DisplayError("Description field is required!");
+                    return;
+                }
                 else
                     description = DescriptionTextBox.Text;
 
-                //  await repo.LogHours(employee, entitys[selectedProject], time, description);
+                LoggOne(projectId, time, description);
                 this.Close();
             }
+            else
+            {
+                DisplayError("Time is required and must be numeric!");
+                return;
+            }
+        }
 
-            
+        private void DisplayError(string message)
+        {
+            ErrorLabel.Visibility = Visibility.Visible;
+            ErrorLabel.Content = message;
+        }
+        private async void LoggOne(int projectId, TimeSpan timeWorked, string description)
+        {
+            TimeTrackerService repo = new TimeTrackerService()
+            {
+                CommitRepository = new CommitRepository(),
+                ProjectRepository = new ProjectRepository(),
+                EmployeeRepository = new EmployeesRepository()
+            };
+
+            await repo.LogHours(Employee, AllProjects[projectId], timeWorked, description);
+        }
+        private async Task<EmployeeEntity> GetEmployee(string id)
+        {
+            EmployeesRepository repo = new EmployeesRepository();
+            var emp = await repo.GetEmployeeById(id);
+
+            return emp;
+        }
+        private async Task<List<ProjectEntity>> GetProjects()
+        {
+            ProjectRepository projectRepository = new ProjectRepository();
+            var projects = await projectRepository.GetAllProjects();
+
+            return projects;
         }
     }
 }

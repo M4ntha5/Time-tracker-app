@@ -1,9 +1,96 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mantas\\Documents\\Github\\Time-tracker-app\\TimeTrackerApp\\TimeTrackerApp.csproj": {}
+    "C:\\Users\\Mantas\\Desktop\\core\\TimeTrackerApp\\TimeTrackerApp\\TimeTrackerApp.csproj": {}
   },
   "projects": {
+    "C:\\Users\\Mantas\\Desktop\\core\\TimeTrackerApp\\TimeTrackerApp\\TimeTrackerApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Mantas\\Desktop\\core\\TimeTrackerApp\\TimeTrackerApp\\TimeTrackerApp.csproj",
+        "projectName": "TimeTrackerApp",
+        "projectPath": "C:\\Users\\Mantas\\Desktop\\core\\TimeTrackerApp\\TimeTrackerApp\\TimeTrackerApp.csproj",
+        "packagesPath": "C:\\Users\\Mantas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mantas\\Desktop\\core\\TimeTrackerApp\\TimeTrackerApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Mantas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Users\\Mantas\\Documents\\Github\\HrAppBackend\\src\\HrApp\\HrApp.csproj": {
+                "projectPath": "C:\\Users\\Mantas\\Documents\\Github\\HrAppBackend\\src\\HrApp\\HrApp.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Identity.Client": {
+              "target": "Package",
+              "version": "[4.8.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.0.2, 3.0.2]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\Mantas\\Documents\\Github\\HrAppBackend\\src\\HrApp\\HrApp.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -74,63 +161,6 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\Mantas\\Documents\\Github\\Time-tracker-app\\TimeTrackerApp\\TimeTrackerApp.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Mantas\\Documents\\Github\\Time-tracker-app\\TimeTrackerApp\\TimeTrackerApp.csproj",
-        "projectName": "TimeTrackerApp",
-        "projectPath": "C:\\Users\\Mantas\\Documents\\Github\\Time-tracker-app\\TimeTrackerApp\\TimeTrackerApp.csproj",
-        "packagesPath": "C:\\Users\\Mantas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mantas\\Documents\\Github\\Time-tracker-app\\TimeTrackerApp\\obj\\",
-        "projectStyle": "PackageReference",
-        "skipContentFileWrite": true,
-        "configFilePaths": [
-          "C:\\Users\\Mantas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net461"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net461": {
-            "projectReferences": {
-              "C:\\Users\\Mantas\\Documents\\Github\\HrAppBackend\\src\\HrApp\\HrApp.csproj": {
-                "projectPath": "C:\\Users\\Mantas\\Documents\\Github\\HrAppBackend\\src\\HrApp\\HrApp.csproj"
-              }
-            }
-          }
-        }
-      },
-      "frameworks": {
-        "net461": {
-          "dependencies": {
-            "CodeMash.Core": {
-              "target": "Package",
-              "version": "[2.0.137, )"
-            },
-            "Microsoft.Identity.Client": {
-              "target": "Package",
-              "version": "[4.8.1, )"
-            }
-          }
-        }
-      },
-      "runtimes": {
-        "win": {
-          "#import": []
-        },
-        "win-x64": {
-          "#import": []
-        },
-        "win-x86": {
-          "#import": []
         }
       }
     }
