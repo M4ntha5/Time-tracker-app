@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\obj\Debug\netcoreapp3.0\
+C:\Users\Mantas\Documents\Github\Time-tracker-app\TimeTrackerApp\obj\Debug\netcoreapp3.0\
 TimeTrackerApp
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_0
-C:\Users\Mantas\Desktop\core\TimeTrackerApp\TimeTrackerApp\App.xaml
+C:\Users\Mantas\Documents\Github\Time-tracker-app\TimeTrackerApp\App.xaml
 3-1138413024
 
 8-178941950
-248710037148
+1991310561111
 FromToWindow.xaml;LoggerWindow.xaml;MainWindow.xaml;
 
-True
+False
 

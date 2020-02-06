@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Documents\Github\HrAppBackend\src\HrApp\HrApp.csproj" />
+    <ProjectReference Include="..\..\..\hr\HrAppBackend\src\HrApp\HrApp.csproj" />
   </ItemGroup>
 
 </Project>

@@ -25,7 +25,6 @@ namespace TimeTrackerApp
         }
         private async void SetUp()
         {
-            //temporary only until working aad
             Employee = await GetEmployee("5e20785d2bd93500011dbf6f");
             AllProjects = await GetProjects();
 
