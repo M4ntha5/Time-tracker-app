@@ -13,7 +13,6 @@ namespace TimeTrackerApp
     {
         //Set the API Endpoint to Graph 'me' endpoint
         string graphAPIEndpoint = "https://graph.microsoft.com/v1.0/me";
-        string endpoint = "http://api.codemash.io/auth/aad?projectId=b09eaa56-75eb-42f6-9d77-145ac6f6dedb";
 
         //Set the scope for API call to user.read
         string[] scopes = new string[] { "user.read" };

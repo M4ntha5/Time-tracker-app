@@ -7,17 +7,11 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="FromToWindow.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="LoggerWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="FromToWindow.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Update="LoggerWindow.xaml">
       <SubType>Designer</SubType>
     </Page>

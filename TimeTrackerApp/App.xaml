@@ -4,6 +4,7 @@
              xmlns:local="clr-namespace:TimeTrackerApp"
              StartupUri="LoggerWindow.xaml">
     <Application.Resources>
-         
+        <FontFamily x:Key="Heebo-Bold">pack://application:,,,/Fonts/#Heebo-Bold</FontFamily>
+        <FontFamily x:Key="Heebo-Regular">pack://application:,,,/Fonts/#Heebo-Regular</FontFamily>
     </Application.Resources>
 </Application>

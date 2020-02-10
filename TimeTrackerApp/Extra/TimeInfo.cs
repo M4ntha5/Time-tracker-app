@@ -5,13 +5,11 @@ namespace TimeTrackerApp.Extra
     public class TimeInfo
     {
         public string ProjectName { get; set; }
-        public TimeSpan Time { get; set; }
-        public string Description { get; set; }
-        public TimeInfo(string projectName, TimeSpan time, string description)
+        public string Time { get; set; }
+        public TimeInfo(string projectName, TimeSpan time)
         {
             ProjectName = projectName;
-            Time = time;
-            Description = description;
+            Time = string.Format("{0:00}:{1:00}", time.Hours, time.Minutes);
         }
     }
 }

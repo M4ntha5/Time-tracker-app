@@ -12,6 +12,7 @@ using HrApp.Entities;
 using HrApp.Repositories;
 using System.Threading.Tasks;
 using TimeTrackerApp.Extra;
+using System.Diagnostics;
 
 namespace TimeTrackerApp
 {
@@ -21,17 +22,18 @@ namespace TimeTrackerApp
     public partial class LoggerWindow : Window
     {
         private readonly DispatcherTimer timer = new DispatcherTimer();
-        List<TimeInfo> DataGridList = new List<TimeInfo>();
+        readonly Stopwatch stopWatch = new Stopwatch();
 
+        List<TimeInfo> DataGridList = new List<TimeInfo>();
         EmployeeEntity Employee;
         List<Commit> Commits = new List<Commit>();
         List<ProjectEntity> AllProjects = new List<ProjectEntity>();
         List<ProjectEntity> LoggedProjects = new List<ProjectEntity>(); 
 
-        DateTime StartTime;
-        TimeSpan elapsed;
-        int StartClicks = 1;
         string message = "";
+        string currentTime = string.Empty;
+        
+        bool isChecked = true;
 
         public LoggerWindow()
         {
@@ -39,16 +41,50 @@ namespace TimeTrackerApp
             SetUp();
         }
 
+        private void LoadStopwatch()
+        {
+            //manual time input
+            TimeLabel.Visibility = Visibility.Collapsed;
+            HoursTextBox.Visibility = Visibility.Collapsed;
+            MinuteTextBox.Visibility = Visibility.Collapsed;
+            HourLabel.Visibility = Visibility.Collapsed;
+            MinuteLabel.Visibility = Visibility.Collapsed;
+            SaveButton.Visibility = Visibility.Collapsed;
+            DataGrid.Visibility = Visibility.Collapsed;
+
+            //stopwatch
+            DescriptionLabel.Margin = new Thickness(174, 589, 0, 0);
+            DescriptionTextBox.Margin = new Thickness(174, 657, 0, 0);
+            ClockLabel.Visibility = Visibility.Visible;
+            StartButton.Visibility = Visibility.Visible;
+            SecondsLabel.Visibility = Visibility.Visible;
+        }
+
+        private void UnloadStopwatch()
+        {
+            //collapsing stopwatch
+            ClockLabel.Visibility = Visibility.Collapsed;
+            SecondsLabel.Visibility = Visibility.Collapsed;
+            StartButton.Visibility = Visibility.Collapsed;
+
+            //manual time input
+            TimeLabel.Visibility = Visibility.Visible;
+            HoursTextBox.Visibility = Visibility.Visible;
+            MinuteTextBox.Visibility = Visibility.Visible;
+            HourLabel.Visibility = Visibility.Visible;
+            MinuteLabel.Visibility = Visibility.Visible;
+            SaveButton.Visibility = Visibility.Visible;
+            DataGrid.Visibility = Visibility.Visible;
+            DescriptionLabel.Margin = new Thickness(179, 389, 0, 0);
+            DescriptionTextBox.Margin = new Thickness(179, 457, 0, 0);
+
+        }
+
         private async void SetUp()
         {
+            StopwatchSlider.IsChecked = true;
             timer.Interval = TimeSpan.FromSeconds(1);
             timer.Tick += timer_Tick;
-
-            Employee = await GetEmployee("5e20785d2bd93500011dbf6f");
-            //string username = (string)System.Windows.Application.Current.Resources["username"];
-
-            string name = "Loged in as: " + Employee.FirstName + " " + Employee.LastName;
-            UsernameLabel.Content = name;
 
             AllProjects = await GetProjects();
             List<string> NamesList = new List<string>();
@@ -58,12 +94,15 @@ namespace TimeTrackerApp
             }
             DropdownList.ItemsSource = NamesList;
             DropdownList.SelectedIndex = 0;
+
+            Employee = await GetEmployee("5e20785d2bd93500011dbf6f");
+
         }
 
         /// <summary>
         /// Sign out the current user
         /// </summary>
-        private async void SignOutButton_Click(object sender, RoutedEventArgs e)
+      /*  private async void SignOutButton_Click(object sender, RoutedEventArgs e)
         {
             var accounts = await App.PublicClientApp.GetAccountsAsync();
             if (accounts.Any())
@@ -83,65 +122,39 @@ namespace TimeTrackerApp
                     ErrorLabel.Content = $"Error signing-out user: {ex.Message}";
                 }
             }
-        }
+        }*/
+       
         private void StartButton_Click(object sender, RoutedEventArgs e)
         {
-            if (StartClicks % 2 != 0)
+            if (!stopWatch.IsRunning)
             {
+                stopWatch.Start();
                 timer.Start();
                 DropdownList.IsEnabled = false;
                 CommitButton.IsEnabled = false;
-                FromToButton.IsEnabled = false;
             }
             else
             {
-                timer.Stop();
-                string description;
-                if (DescriptionTextBox.Text == "")
-                {
-                    DisplayError("Description field is required!");
-                    return;
-                }
-                else
-                    description = DescriptionTextBox.Text;
-
+                stopWatch.Stop();
+                DescriptionLabel.Visibility = Visibility.Visible;
+                DescriptionTextBox.Visibility = Visibility.Visible;
+                DiscardButton.Visibility = Visibility.Visible;
                 CommitButton.IsEnabled = true;
-                FromToButton.IsEnabled = true;
                 DropdownList.IsEnabled = true;
-                ErrorLabel.Visibility = Visibility.Collapsed;
-                ClockLabel.Content = "00:00:00";
-
-                var projectId = DropdownList.SelectedIndex;
-
-                Commit commit = new Commit(Employee, description, elapsed.TotalHours);
-                Commits.Add(commit);
-
-                ProjectEntity entity = AllProjects[projectId];
-                LoggedProjects.Add(entity);
-
-                DataGridList.Add(new TimeInfo(AllProjects[projectId].Name, elapsed, description));
-
-                DataGrid.ItemsSource = null;
-                DataGrid.ItemsSource = DataGridList;
-                DataGrid.Visibility = Visibility.Visible;
-                DescriptionTextBox.Text = "";
             }
-
-            StartButton.Content = timer.IsEnabled ? "Stop" : "Start";
-            StartTime = DateTime.Now;
-            StartClicks++;
+            StartButton.Content = stopWatch.IsRunning ? "Stop" : "Resume";
         }
         void timer_Tick(object sender, EventArgs e)
         {
-            elapsed = DateTime.Now - StartTime;
-
-            string text = "";
-
-            text += elapsed.Hours.ToString("00") + ":" +
-                    elapsed.Minutes.ToString("00") + ":" +
-                    elapsed.Seconds.ToString("00");
-
-            ClockLabel.Content = text;
+            if (stopWatch.IsRunning)
+            {
+                TimeSpan ts = stopWatch.Elapsed;
+                currentTime = String.Format("{0:00}:{1:00}:",
+                    ts.Hours, ts.Minutes);
+                var secs = String.Format("{0:00}", ts.Seconds);
+                ClockLabel.Content = currentTime;
+                SecondsLabel.Content = secs;
+            }
         }
         private void Window_Closed(object sender, EventArgs e)
         {
@@ -152,16 +165,30 @@ namespace TimeTrackerApp
 
         private void CommitButton_Click(object sender, RoutedEventArgs e)
         {
-            LoggMultiple();
-            DataGrid.ItemsSource = null;
-            DataGridList = new List<TimeInfo>();
-            LoggedProjects = new List<ProjectEntity>();
-            Commits = new List<Commit>();
-        }
-        private void FromToButton_Click(object sender, RoutedEventArgs e)
-        {
-            FromToWindow LogSingle = new FromToWindow();
-            LogSingle.ShowDialog();
+            if(isChecked)
+            {
+                string description;
+                if (DescriptionTextBox.Text == "")
+                {
+                    DisplayError("Description field is required!");
+                    return;
+                }
+                else
+                    description = DescriptionTextBox.Text;
+
+                var projectId = DropdownList.SelectedIndex;
+                var project = AllProjects[projectId];
+                var time = stopWatch.Elapsed;
+
+                LoggOne(project, time, description);
+                SetFresh();
+            }
+            else
+            {
+                LoggMultiple();
+                SetFresh();
+            }
+            
         }
         private async void LoggMultiple()
         {
@@ -173,6 +200,17 @@ namespace TimeTrackerApp
             };
 
             await service.LogHours(LoggedProjects, Commits);
+        }
+        private async void LoggOne(ProjectEntity project, TimeSpan time, string description)
+        {
+            TimeTrackerService service = new TimeTrackerService()
+            {
+                CommitRepository = new CommitRepository(),
+                ProjectRepository = new ProjectRepository(),
+                EmployeeRepository = new EmployeesRepository()
+            };
+
+            await service.LogHours(Employee, project, time, description);
         }
         private async Task<List<ProjectEntity>> GetProjects()
         {
@@ -190,6 +228,101 @@ namespace TimeTrackerApp
         {
             ErrorLabel.Visibility = Visibility.Visible;
             ErrorLabel.Content = message;
+        }
+        private void SetFresh()
+        {
+            DescriptionTextBox.Text = "";
+            StartButton.Content = "Start";
+            ClockLabel.Content = "00:00:";
+            SecondsLabel.Content = "00";
+            stopWatch.Stop();
+            stopWatch.Reset();
+            timer.Stop();
+            currentTime = string.Empty;
+            HoursTextBox.Text = "";
+            MinuteTextBox.Text = "";
+            DropdownList.SelectedIndex = 0;
+            DataGrid.ItemsSource = null;
+            ErrorLabel.Visibility = Visibility.Collapsed;
+            ErrorLabel.Content = "";
+            DataGridList = new List<TimeInfo>();
+            LoggedProjects = new List<ProjectEntity>();
+            Commits = new List<Commit>();
+        }
+
+        private void DiscardButton_Click(object sender, RoutedEventArgs e)
+        {
+            SetFresh();
+        }
+
+        private void StopwatchSlider_Unchecked(object sender, RoutedEventArgs e)
+        {
+            UnloadStopwatch();
+            SetFresh();
+            isChecked = false;
+        }
+        private void StopwatchSlider_Checked(object sender, RoutedEventArgs e)
+        {           
+            if(!isChecked)
+            {
+                LoadStopwatch();
+                SetFresh();
+            }
+            isChecked = true;
+        }
+
+        private void SaveButton_Click(object sender, RoutedEventArgs e)
+        {
+            var h = HoursTextBox.Text;
+            var m = MinuteTextBox.Text;
+            if (int.TryParse(h, out int hours) && int.TryParse(m, out int minutes))
+            {
+                if(hours <= 0 && minutes <= 0)                 
+                {
+                    DisplayError("Time can not be less than 1 min!");
+                    return;
+                }
+                else if(minutes < 0 || minutes > 59)
+                {
+                    DisplayError("Minutes can not be less than 1 or more than 59!");
+                    return;
+                }
+                else if (hours < 0 || hours > 23)
+                {
+                    DisplayError("Hours can not be less than 1 or more than 23!");
+                    return;
+                }
+
+                string description;
+                if (DescriptionTextBox.Text == "")
+                {
+                    DisplayError("Description field is required!");
+                    return;
+                }
+                else
+                    description = DescriptionTextBox.Text;
+
+                var time = TimeSpan.FromHours(hours) + TimeSpan.FromMinutes(minutes);
+
+                var projectId = DropdownList.SelectedIndex;
+                var project = AllProjects[projectId];
+
+
+                Commit commit = new Commit(Employee, description, time.TotalHours);
+                Commits.Add(commit);
+
+                ProjectEntity entity = AllProjects[projectId];
+                LoggedProjects.Add(entity);
+
+                DataGridList.Add(new TimeInfo(project.Name, time));
+
+                DataGrid.ItemsSource = null;
+                DataGrid.ItemsSource = DataGridList;
+                DescriptionTextBox.Text = "";
+                HoursTextBox.Text = "";
+                MinuteTextBox.Text = "";
+                DropdownList.SelectedIndex = 0;
+            }
         }
     }
 }

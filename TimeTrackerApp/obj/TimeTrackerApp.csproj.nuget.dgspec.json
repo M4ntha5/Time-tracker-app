@@ -4,6 +4,81 @@
     "C:\\Users\\Mantas\\Documents\\Github\\Time-tracker-app\\TimeTrackerApp\\TimeTrackerApp.csproj": {}
   },
   "projects": {
+    "C:\\Users\\Mantas\\Desktop\\hr\\HrAppBackend\\src\\HrApp\\HrApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Mantas\\Desktop\\hr\\HrAppBackend\\src\\HrApp\\HrApp.csproj",
+        "projectName": "HrApp",
+        "projectPath": "C:\\Users\\Mantas\\Desktop\\hr\\HrAppBackend\\src\\HrApp\\HrApp.csproj",
+        "packagesPath": "C:\\Users\\Mantas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mantas\\Desktop\\hr\\HrAppBackend\\src\\HrApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Mantas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "CodeMash.Core": {
+              "target": "Package",
+              "version": "[2.0.137, )"
+            },
+            "GemBox.Spreadsheet": {
+              "target": "Package",
+              "version": "[45.0.0.1084, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Syncfusion.XlsIO.Net.Core": {
+              "target": "Package",
+              "version": "[17.4.0.47, )"
+            },
+            "System.Security.Permissions": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "sautinsoft.document": {
+              "target": "Package",
+              "version": "[4.2.1.24, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\Mantas\\Documents\\Github\\Time-tracker-app\\TimeTrackerApp\\TimeTrackerApp.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -27,8 +102,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\Mantas\\Documents\\hr\\HrAppBackend\\src\\HrApp\\HrApp.csproj": {
-                "projectPath": "C:\\Users\\Mantas\\Documents\\hr\\HrAppBackend\\src\\HrApp\\HrApp.csproj"
+              "C:\\Users\\Mantas\\Desktop\\hr\\HrAppBackend\\src\\HrApp\\HrApp.csproj": {
+                "projectPath": "C:\\Users\\Mantas\\Desktop\\hr\\HrAppBackend\\src\\HrApp\\HrApp.csproj"
               }
             }
           }
