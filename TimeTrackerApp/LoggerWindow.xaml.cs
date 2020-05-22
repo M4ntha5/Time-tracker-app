@@ -95,7 +95,12 @@ namespace TimeTrackerApp
             DropdownList.ItemsSource = NamesList;
             DropdownList.SelectedIndex = 0;
 
-            Employee = await GetEmployee("5e20785d2bd93500011dbf6f");
+            Employee = await GetEmployee("5ec79349cce4b0000185a5eb");
+
+            stopWatch.Start();
+            timer.Start();
+            DropdownList.IsEnabled = false;
+            CommitButton.IsEnabled = false;
 
         }
 
@@ -155,6 +160,33 @@ namespace TimeTrackerApp
                 ClockLabel.Content = currentTime;
                 SecondsLabel.Content = secs;
             }
+
+            var inactiveTimeRetriever = new InactiveTimeRetriever();
+            var inactiveTime = inactiveTimeRetriever.GetInactiveTime();
+            DescriptionTextBox.Text = string.Format("Inactive for {0}s", (int)inactiveTime.Value.TotalSeconds);
+            if (inactiveTime == null)
+            {
+                DescriptionTextBox.Text = string.Format("null hapened");
+            }
+            else if (inactiveTime.Value.TotalSeconds > 10)
+            {           
+                stopWatch.Stop();
+                DescriptionLabel.Visibility = Visibility.Visible;
+                DescriptionTextBox.Visibility = Visibility.Visible;
+                DiscardButton.Visibility = Visibility.Visible;
+                CommitButton.IsEnabled = true;
+                DropdownList.IsEnabled = true;
+            }
+            else
+            {
+                stopWatch.Start();
+                timer.Start();
+                DropdownList.IsEnabled = false;
+                CommitButton.IsEnabled = false;
+            }
+
+
+
         }
         private void Window_Closed(object sender, EventArgs e)
         {

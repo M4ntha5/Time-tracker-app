@@ -22,12 +22,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Desktop\hr\HrAppBackend\src\HrApp\HrApp.csproj" />
+    <Folder Include="Fonts\" />
+    <Folder Include="Images\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Fonts\" />
-    <Folder Include="Images\" />
+    <ProjectReference Include="..\..\HrAppBackend\src\HrApp\HrApp.csproj" />
   </ItemGroup>
 
   <ItemGroup>
